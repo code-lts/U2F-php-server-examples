@@ -1,11 +1,6 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: samuel
- * Date: 13/12/2016
- * Time: 16:48
- */
-use Samyoul\U2F\U2FServer\Registration;
+
+use CodeLts\U2F\U2FServer\Registration;
 
 /**
  * @param string $location

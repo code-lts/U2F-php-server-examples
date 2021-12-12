@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: samuel
- * Date: 13/12/2016
- * Time: 16:43
- */
+
 require_once('../functions.php');
 
 $pdo = getDBConnection();

@@ -5,7 +5,7 @@
 <div class="alert alert-info">
     <p>Try logging in. Use one of the predefined users.</p>
     <ul>
-        <li>samyoul</li>
+        <li>williamdes</li>
         <li>donkey</li>
         <li>shrek</li>
     </ul>

@@ -1,14 +1,9 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: samuel
- * Date: 13/12/2016
- * Time: 18:11
- */
+
 require("../vendor/autoload.php");
 require("functions.php");
 
-use Samyoul\U2F\U2FServer\U2FServer as U2F;
+use CodeLts\U2F\U2FServer\U2FServer as U2F;
 session_start();
 
 $user = $_SESSION['authenticatedUser'];
@@ -23,7 +18,7 @@ $registrationData = U2F::makeRegistration(appID());
 $_SESSION['registrationRequest'] = $registrationData['request'];
 
 // Extract the request and signatures, JSON encode them so we can give the data to our javaScript magic
-/** @var \Samyoul\U2F\U2FServer\RegistrationRequest $registrationRequest */
+/** @var \CodeLts\U2F\U2FServer\RegistrationRequest $registrationRequest */
 $registrationRequest = json_encode($registrationData['request']);
 $registrationSignatures = json_encode($registrationData['signatures']);
 

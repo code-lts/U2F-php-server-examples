@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: samuel
- * Date: 13/12/2016
- * Time: 18:31
- */
+
 require("../vendor/autoload.php");
 require("functions.php");
 

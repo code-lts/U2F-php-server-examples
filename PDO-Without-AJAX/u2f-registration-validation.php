@@ -1,14 +1,9 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: samuel
- * Date: 13/12/2016
- * Time: 21:08
- */
+
 require("../vendor/autoload.php");
 require("functions.php");
 
-use Samyoul\U2F\U2FServer\U2FServer as U2F;
+use CodeLts\U2F\U2FServer\U2FServer as U2F;
 session_start();
 
 $user = $_SESSION['authenticatedUser'];
