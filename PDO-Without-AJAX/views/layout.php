@@ -7,19 +7,23 @@
 </head>
 <body>
 
-<?php @session_start(); if(isset($_SESSION['error'])): ?>
+<?php
+
+@session_start(); if (isset($_SESSION['error'])) : ?>
 <!-- Error Message -->
 <div class="alert alert-danger">
     <p><?=$this->e($_SESSION['error'])?></p>
 </div>
-<?php unset($_SESSION['error']); endif ?>
+    <?php unset($_SESSION['error']);
+endif ?>
 
-<?php @session_start(); if(isset($_SESSION['message'])): ?>
+<?php @session_start(); if (isset($_SESSION['message'])) : ?>
 <!-- Success Message -->
 <div class="alert alert-success">
     <p><?=$this->e($_SESSION['message'])?></p>
 </div>
-<?php unset($_SESSION['message']); endif ?>
+    <?php unset($_SESSION['message']);
+endif ?>
 
 <div class="container">
     <?=$this->section('content')?>
